@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Poppins",sans-serif;
+    font-size: 62.5%;
+    color: var(--white);
+}
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --main-color: #66f189;
+    --white: #fff;
+    --disable: #fff3;
+}
+
+@font-face{
+    font-family: myFont;
+    src: url(../assets/Rodeluxet.ttf);
+}
+
+.resume{
+    width: 100%;
+    height: auto;
+    margin-top: -2.5rem;
+}
+
+.resume-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5rem;
+}
+
+.resume-box h2{
+    font-size: 4.5rem;
+    font-family: myFont;
+}
+
+.resume-box h2 span{
+    font-size: 4.5rem;
+    font-family: myFont;
+    color: var(--main-color);
+}
+
+.resume-box p{
+    font-size: 1.2rem;
+}
+
+.resume-box .desc{
+    margin: 2rem 0 2.5rem;
+}
+
+.resume-box .resume-btn{
+    width: 100%;
+    height: 5.3rem;
+    background-color: var(--second-bg-color);
+    border: .2rem solid var(--second-bg-color);
+    font-size: 1.6rem;
+    color: var(--white);
+    font-weight: 500;
+    margin-bottom: 2rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.resume-box .resume-btn:hover{
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+
+.resume-detail-download{
+    width: 100%;
+    background: var(--second-bg-color);
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+    border-radius: 1rem;
+    border: .1rem solid #5ced73;
+    
+}
+
+.resume-detail-download .resume-download{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1rem; */
+}
+
+/* .resume-detail-download .resume-download .resume-text{
+    
+} */
+.resume-detail-download .resume-download .resume-text h2{
+    font-family: myFont;
+    color: #5ced73;
+}
+
+.resume-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 2rem;
+    height: 40rem;
+    overflow: auto;
+}
+
+.resume-list::-webkit-scrollbar{
+    width: .7rem;
+}
+
+.resume-list::-webkit-scrollbar-thumb{
+    background: transparent;
+    border-radius: 1rem;
+}
+
+.resume-list:hover::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+}
+.resume-list .resume-item{
+    background: var(--second-bg-color);
+    border: .1rem solid var(--second-bg-color);
+    border-radius: .8rem;
+    padding: 3rem 2.5rem;
+    height: calc((30rem - 2rem) / 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .5s;
+}
+
+.resume-list .resume-item:hover{
+    border-color: var(--main-color);
+}
+
+.resume-item .year{
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
+
+.resume-item .board{
+    color: var(--disable);
+    font-size: 1.5rem;
+}
+
+.resume-item .board span{
+    color: var(--main-color);
+    font-size: 1rem;
+}
+
+.resume-item h3{
+    font-size: 2.2rem;
+}
+
+.resume-detail-skill .resume-list{
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+}
+
+.resume-detail-skill .resume-item{
+    position: relative;
+    align-items: center;
+    height: auto;
+}
+
+.resume-detail-skill .resume-item i {
+    font-size: 8.5rem;
+    transition: .5s;
+
+}
+
+.resume-detail-skill .resume-item:hover i{
+    color: var(--main-color);
+}
+
+.resume-detail-skill .resume-item:hover span{
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    border-color: var(--main-color);
+}
+
+.resume-detail-skill .resume-item span{
+    margin-top: 1rem;
+    text-align: center;
+    width: 100%;
+    background: transparent;
+    color: var(--white);
+    font-size: 1.6rem;
+    padding: .5rem 1rem;
+    border-radius: .6rem;
+    border: .1rem solid var(--white);
+    /* transform: scale(.9); */
+    transition: .5s; 
+}
+
+.resume-detail-about .resume-list{
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+
+.resume-detail-about .resume-item{
+    height: auto;
+    padding: 0 0 .5rem;
+    background: transparent;
+    border: none;
+}
+
+.resume-detail-about .resume-item p{
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
+
+.resume-detail-about .resume-item p span{
+    color: var(--white);
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+
+
+
+

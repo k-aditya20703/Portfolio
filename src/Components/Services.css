@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Poppins",sans-serif;
+    font-size: 62.5%;
+    color: var(--white);
+}
+:root{
+    --bg-color: #1a1320;
+    --second-bg-color: #2c1d3a;
+    --main-color: #8800ff;
+    --white: #ffffff;
+    --disable: rgba(255, 255, 255, 0.466);
+}   
+.services{
+    width: 100%;
+    height: auto;
+}
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 1.3rem;
+    color: var(--white);
+    font-family: myFont;
+}
+
+.heading span{
+    color: var(--main-color);
+    font-size: 4.5rem;
+    font-family: myFont;
+}
+
+.service-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    /* font-size: 4rem; */
+}
+
+.service-container .service-box{
+    padding: 2rem 2.5rem;
+    background: var(--second-bg-color);
+    border: .2rem solid var(--second-bg-color);
+    border-radius: 1rem;
+    transition: .5s;
+}
+
+.service-container .service-box:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.service-box .icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-box .icon i {
+    font-size: 4.5rem;
+    transition: .5s;
+}
+
+.service-box:hover .icon :not(a i){
+    color: var(--main-color);
+}
+
+.service-box .icon a{
+    display: inline-flex;
+    background: var(--white);
+    border-radius: 50%;
+    padding: .5rem;
+    transition: .5s;
+}
+
+.service-box:hover .icon a{
+    background: var(--main-color);
+}
+
+.service-box .icon a i {
+    font-size: 2.5rem;
+    color: var(--bg-color);
+    transform: rotate(225deg);
+}
+
+.service-box .icon a:hover i{
+    transform: rotate(180deg);
+}
+
+.service-box h3{
+    font-size: 2rem;
+    margin: .5rem 0 1rem;
+}
+
+.service-box:hover h3{
+    color: var(--main-color);
+}
+
+.service-box p{
+    font-size: 1.6rem;
+    color: var(--disable);
+}
