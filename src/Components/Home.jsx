@@ -2,6 +2,7 @@ import React from 'react'
 import "./Home.css"
 import { NavLink, Link } from 'react-router-dom'
 import Navbar from './Navbar'
+
 import cv from '../assets/CV.pdf'
 const Home = () => {
   return (

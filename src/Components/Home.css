@@ -5,6 +5,10 @@
     src: url(../assets/Rodeluxet.ttf);
 }
 
+.active a{
+    color: var(--main-color);
+}
+
 *{
     text-decoration: none;
     margin: 0;
@@ -50,6 +54,10 @@ header{
 .logo{
    width: 10rem;
 }
+
+nav.open a{
+        display: block;
+}
 nav a {
     color: var(--white);
     margin-left: 2rem;
@@ -58,8 +66,8 @@ nav a {
     transition: .5s;
 }
 
-nav a:hover, nav a.active{
-    color: var(--main-color);
+nav a:hover{
+   color: var(--main-color);
 }
 
 #menu-icon{
@@ -67,6 +75,13 @@ nav a:hover, nav a.active{
     color: var(--white);
     display: none;
 }
+
+/* @media (max-width: 480px) {
+    nav #menu-icon{
+        display: flex;
+        
+    }
+} */
 
 section{
     background-color: var(--bg-color);
@@ -243,4 +258,59 @@ section{
     width: 100%;
     object-fit: cover;
     mix-blend-mode:luminosity;
+}
+
+@media screen and (max-width: 1200px){
+
+    html{
+        font-size: 55%;
+    }
+    
+}
+
+@media screen and (max-width: 992px){
+    header{
+        padding: 2rem 4%;
+    }
+
+    section{
+        padding: 10rem 4% 2rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+     #menu-icon{
+        display: block;
+    }
+
+   nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0,0,0,.2);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.2) ;
+        text-align: center;
+        /* display: none; */
+    }
+
+    nav a{
+        display: block;
+        margin: 4rem 0;
+    }
+
+    .home{
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .home-img .img-box{
+        width: 20rem;
+        height: 20rem;
+    }
+
+    
 }

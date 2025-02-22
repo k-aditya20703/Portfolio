@@ -1,5 +1,14 @@
 .portfolio{
     height: auto;
+    width: 100%;
+}
+
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --main-color: #66f189;
+    --white: #473737;
+    --disable: #fff3;
 }
 
 
@@ -7,6 +16,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
+    /* margin-right: 1rem; */
 }
 
 .portfolio-box .numb{
@@ -19,3 +29,70 @@
 .portfolio-detail{
     display: none;
 }
+
+.portfolio-detail.active{
+    display: block;
+}
+/* .portfolio-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+} */
+.portfolio-box h3{
+    font-size: 3.5rem;
+    margin: .8rem 0 2rem;
+}
+
+.portfolio-box p{
+    font-size: 1.6rem;
+}
+
+.portfolio-box .tech{
+    margin: 2rem 0;
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--white);
+    padding-bottom: 2rem;
+}
+
+.portfolio-box .tech p{
+    color: var(--main-color);
+}
+
+.portfolio-box .live-git a {
+    position: relative;
+    display: inline-flex;
+    padding: 1rem;
+    font-size: 4rem;
+    color: var(--white);
+    border-radius: 50%;
+    background: var(--second-bg-color);
+    margin-inline-end: 1rem;
+    margin-inline-start: .5rem;
+    
+}
+
+.portfolio-box .live-git a i{
+    color: var(--white);
+    transition: .5s;
+}
+
+.portfolio-box .live-git a i:hover{
+    color: var(--main-color);
+}
+
+.thumbnail img{
+    width: 100%;
+    height: 90%;
+    margin-top: 5%;
+    border-radius: 1rem;
+}
+
+
+.slick-slide > div{
+    margin: 0 2rem;
+}
+
+
+
+
+
